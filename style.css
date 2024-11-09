@@ -1,0 +1,133 @@
+
+html {
+    scroll-behavior: smooth; 
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+  }
+  
+  
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .header nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .header nav a:hover {
+    color: #ffd700;
+  }
+  
+   .hero {
+    background: url('pac.webp') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 252, 252);
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .cta-buttons button {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1rem;
+    background: #ffd700;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .cta-buttons button:hover {
+    transform: scale(1.1);
+  }
+  
+ 
+  .section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .section p {
+    margin: 0.5rem 0;
+  }
+  
+  #features .feature {
+    margin: 20px;
+  }
+  
+  .steps .step {
+    margin: 15px;
+  }
+  
+  /* Gallery */
+  .gallery-images img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-images img:hover {
+    transform: scale(1.05);
+  }
+  
+ 
+  #contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact-form button {
+    padding: 12px 24px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #contact-form button:hover {
+    background: #218838;
+  }
+  
+ 
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
